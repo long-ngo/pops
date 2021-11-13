@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pops</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header" class="header-main">
+      <div class="header-left">
+        <a class="header-logo" href="/index.html">
+          <img
+            class="header-img"
+            src="https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png"
+            alt="logo"
+          />
+        </a>
+        <nav class="header-nav">
+          <a class="nav-link" href="#">Thiếu nhi</a>
+          <a class="nav-link" href="#">Comics</a>
+          <a class="nav-link" href="#">Anime</a>
+          <a class="nav-link" href="#">Phim</a>
+          <a class="nav-link" href="#">Thêm</a>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <div class="search-bar">
+          <input
+            class="input-search"
+            type="text"
+            placeholder="Tên phim, anime, comic, diễn viên, nghệ sĩ..."
+          />
+          <!-- search -->
+          <button class="btn-search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header-actor">
+          <a class="btn btn-login" href="#">ĐĂNG NHẬP</a>
+          <a class="btn" href="#">ĐĂNG KÝ</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- slide -->
+    <div class="slider">
+      <div class="slider-item slider-item--active">
+        <img
+          class="slider-img"
+          src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/livestream_banner-85f5c45524ef-1631700358568-cCsdAIEW.png?v=0&maxW=1400&format=webp"
+          alt="onepice"
+        />
+        <div class="slider-info">
+          <h2 class="slider-title">Onepice</h2>
+          <p class="slider-disc">
+            <span class="slider-label">Năm phát hành:</span> 1996
+          </p>
+          <a class="slider-btn">CHI TIẾT</a>
+        </div>
+      </div>
+      <div class="slider-item">
+        <img
+          class="slider-img"
+          src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/naruto_livestream-64d36adffc7b-1619429209495-QSjUXlg4.png?v=0&maxW=1400&format=jpg"
+          alt="naruto"
+        />
+        <div class="slider-info">
+          <h2 class="slider-title">Naruto</h2>
+          <p class="slider-disc">
+            <span class="slider-label">Năm phát hành:</span> 1996
+          </p>
+          <a class="slider-btn">CHI TIẾT</a>
+        </div>
+      </div>
+      <div class="slider-item">
+        <img
+          class="slider-img"
+          src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_assets/slide_banner_smart_tv-6386ca83ac1b-1632452183677-bM7VK3L0.png?v=0&maxW=1400&format=webp"
+          alt="conan"
+        />
+        <div class="slider-info">
+          <h2 class="slider-title">Conan</h2>
+          <p class="slider-disc">
+            <span class="slider-label">Năm phát hành:</span> 1996
+          </p>
+          <a class="slider-btn">CHI TIẾT</a>
+        </div>
+      </div>
+      <div class="slider-item">
+        <img
+          class="slider-img"
+          src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_assets/nuphu_2021_mvt__trailer-82caf0dbdff5-1636443899117-GazbkuBE.png?v=0&maxW=1400&format=webp"
+          alt="Nhật ký sống sót của nữa phụ phản diện"
+        />
+        <div class="slider-info">
+          <h2 class="slider-title">Nhật ký sống sót của nữ phụ phản diện</h2>
+          <p class="slider-disc">
+            <span class="slider-label">Năm phát hành:</span> 1996
+          </p>
+          <a class="slider-btn">CHI TIẾT</a>
+        </div>
+      </div>
+
+      <ul class="slider-dots">
+        <li class="slider-dot slider-dot--active"></li>
+        <li class="slider-dot"></li>
+        <li class="slider-dot"></li>
+        <li class="slider-dot"></li>
+      </ul>
+    </div>
+
+    <!-- main -->
+    <main class="main-container">
+      <!-- section -->
+      <section class="slick-list">
+        <div class="slick-title">
+          <h3 class="slick-header">Hot Series</h3>
+          <div class="slick-controll">
+            <a class="slick-controll__link" href="#"
+              ><img
+                src="https://cdn.popsww.com/popsapp/assets/images/icons/icon-left-white.svg"
+                alt="left"
+            /></a>
+            <a class="slick-controll__link" href="#"
+              ><img
+                src="https://cdn.popsww.com/popsapp/assets/images/icons/icon-right-white.svg"
+                alt="right"
+            /></a>
+          </div>
+        </div>
+        <div class="slick-track">
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/thumbnail_title-73a5ea4c49bb-1632451704498-1oZ3TDdX.png?v=0&maxW=300"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/thumbnail_title_revised__4_-fb6df5164485-1633318073662-41b1JFUR.png?v=0&maxW=300"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="/detail.html">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/thumbnail_title__5_-f84207b5755f-1631767050748-rQKzxt64.png?v=0&maxW=300"
+              alt="onepiece"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/thumbnail_title-66aee0005e25-1615365333873-a9OPOSey.png?v=0&maxW=300"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/3_bl_thumbnail_title_1024_x_1024-142f7debbe1c-1599818932965-RQ6Ul3RP.png?v=0&maxW=300"
+              alt="conan"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="slick-list">
+        <div class="slick-title">
+          <h3 class="slick-header">Phim Mới - Xem ngay</h3>
+          <div class="slick-controll">
+            <a class="slick-controll__link" href="#"
+              ><img
+                src="https://cdn.popsww.com/popsapp/assets/images/icons/icon-left-white.svg"
+                alt="left"
+            /></a>
+            <a class="slick-controll__link" href="#"
+              ><img
+                src="https://cdn.popsww.com/popsapp/assets/images/icons/icon-right-white.svg"
+                alt="right"
+            /></a>
+          </div>
+        </div>
+        <!-- slick -->
+        <div class="slick-track">
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/camychiha_08_verticalposter_resized-f4a1c9113e92-1635477538881-cYplZ2uz.png?v=0&maxW=260"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/vertical_poster-9fd36a97d56e-1635327922998-lNkR7xqz.png?v=0&maxW=260"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/thanaichiai_08_verticalposter-c37231f4241a-1633682824530-an6kxlGl.jpg?v=0&maxW=260"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/vertical_poster_publishing-30d900f0587c-1632451724841-QnBtY2L0.png?v=0&maxW=260"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/camuchammat_08_verticalposter-a5c27c87fd0b-1633004181949-ue2QONj5.jpg?v=0&maxW=260"
+              alt="conan"
+            />
+          </a>
+          <a class="slick-track__link" href="#">
+            <img
+              src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/vertical_posterpublishing-e546aef25733-1619592647290-2vS2sbp9.png?v=0&maxW=260"
+              alt="conan"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <a href="#" class="footer-link">
+          <img
+            class="footer-logo"
+            src="https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png"
+            alt="pops"
+          />
+        </a>
+        <p class="footer-disc">
+          Mạng xã hội chia sẻ các nội dung video giải trí chất lượng cao, phù
+          hợp mọi độ tuổi và an toàn cho trẻ em.
+        </p>
+        <div class="footer-app">
+          <a href="#" class="footer-app__link">
+            <img
+              class="footer-app__img"
+              src="https://cdn.popsww.com/popsapp/assets/images/icons/appstore.png"
+              alt="App Store"
+            />
+          </a>
+          <a href="#" class="footer-app__link">
+            <img
+              class="footer-app__img"
+              src="https://cdn.popsww.com/popsapp/assets/images/icons/googleplay.png"
+              alt="Google Play"
+            />
+          </a>
+          <a href="#" class="footer-app__link">
+            <img
+              class="footer-app__img"
+              src="https://cdn.popsww.com/popsapp/assets/images/icons/smartTV.png"
+              alt="Smart TV"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <h3 class="footer-title">NỘI DUNG</h3>
+        <div class="footer-items">
+          <a class="footer-item__link" href="#">Trang chủ</a>
+          <a class="footer-item__link" href="#">Âm nhạc</a>
+          <a class="footer-item__link" href="#">Truyện tranh</a>
+          <a class="footer-item__link" href="#">Thiếu nhi</a>
+          <a class="footer-item__link" href="#">Blog</a>
+          <a class="footer-item__link" href="#">Anime</a>
+          <a class="footer-item__link" href="#">Show</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h3 class="footer-title">LIÊN HỆ</h3>
+        <p class="footer-address">
+          <b>Địa chỉ:</b> Tầng 4, Block A, Viettel Complex Tower, 285 Cách Mạng
+          Tháng Tám, Phường 12, Quận 10, Thành phố Hồ Chí Minh
+        </p>
+        <p class="footer-contact"><b>Điện thoại:</b> +84 (28) 62921652</p>
+        <p class="footer-contact">
+          <b>Email:</b>
+          <span class="footer-email">popsapp-support@popsww.com</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
