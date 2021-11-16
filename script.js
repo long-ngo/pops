@@ -28,6 +28,7 @@ const sliderAuto = (index) => {
   sliderItem[index].classList.toggle('slider-item--active');
 };
 
+//slider run auto
 (() => {
   let index = 0;
   let length = sliderDot.length;
