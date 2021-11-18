@@ -37,3 +37,31 @@ const sliderAuto = (index) => {
     index < length - 1 ? index++ : (index = 0);
   }, 9000);
 })();
+
+// slick controll
+const slickControl = document.querySelectorAll('.slick-controll__btn');
+
+(() => {
+  let index = 0;
+  let indexCount = 87.5;
+  return (slickScroll = (i) => {
+    const slickTrack =
+      slickControl[i].parentElement.parentElement.parentElement;
+    const slickTrackWrapper = slickTrack.querySelector('.slick-track__wrapper');
+    const slickTrackItem = slickTrack.querySelectorAll('.slick-track__item');
+
+    if (slickControl[i].classList.contains('slick-controll__btn--next')) {
+      slickTrackWrapper.style.transform = `translateX(${index - indexCount}vw)`;
+      index -= 87.5;
+    } else {
+      slickTrackWrapper.style.transform = `translateX(${index + indexCount}vw)`;
+      index += 87.5;
+    }
+  });
+})();
+
+for (let i = 0, l = slickControl.length; i < l; i++) {
+  slickControl[i].addEventListener('click', () => {
+    slickScroll(i);
+  });
+}
