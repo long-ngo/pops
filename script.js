@@ -39,29 +39,47 @@ const sliderAuto = (index) => {
 })();
 
 // slick controll
-const slickControl = document.querySelectorAll('.slick-controll__btn');
+const slickControlBtn = document.querySelectorAll('.slick-controll__btn');
 
 (() => {
-  let index = 0;
+  const indexArr = [];
+  indexArr.length = slickControlBtn.length / 2;
+  indexArr.fill(0);
   let indexCount = 87.5;
+
   return (slickScroll = (i) => {
     const slickTrack =
-      slickControl[i].parentElement.parentElement.parentElement;
+      slickControlBtn[i].parentElement.parentElement.parentElement;
     const slickTrackWrapper = slickTrack.querySelector('.slick-track__wrapper');
     const slickTrackItem = slickTrack.querySelectorAll('.slick-track__item');
 
-    if (slickControl[i].classList.contains('slick-controll__btn--next')) {
+    let index = indexArr[Math.floor(i / 2)];
+
+    if (slickControlBtn[i].classList.contains('slick-controll__btn--next')) {
       slickTrackWrapper.style.transform = `translateX(${index - indexCount}vw)`;
-      index -= 87.5;
+      indexArr[Math.floor(i / 2)] = index - indexCount;
+
+      slickControlBtn[i - 1].removeAttribute('disabled');
+      if (
+        indexArr[Math.floor(i / 2)] <=
+        (Math.ceil(slickTrackItem.length / 6) - 1) * -indexCount
+      ) {
+        slickControlBtn[i].setAttribute('disabled', true);
+      }
     } else {
       slickTrackWrapper.style.transform = `translateX(${index + indexCount}vw)`;
-      index += 87.5;
+      indexArr[Math.floor(i / 2)] = index + indexCount;
+      slickControlBtn[i + 1].removeAttribute('disabled');
+      console.log(indexArr[Math.floor(i / 2)]);
+      if (indexArr[Math.floor(i / 2)] >= 0) {
+        slickControlBtn[i].setAttribute('disabled', true);
+      }
     }
   });
 })();
 
-for (let i = 0, l = slickControl.length; i < l; i++) {
-  slickControl[i].addEventListener('click', () => {
+for (let i = 0, l = slickControlBtn.length; i < l; i++) {
+  slickControlBtn[i].addEventListener('click', () => {
     slickScroll(i);
   });
 }
